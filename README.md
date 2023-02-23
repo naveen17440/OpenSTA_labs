@@ -53,9 +53,9 @@ Run 'sta run.tcl'
 ![day1](./images/day1_5.png)
 
 Following the command use to run OpenSTA
-
-'sta run.tcl -exit | tee run1.log'
-
+'''
+sta run.tcl -exit | tee run1.log'
+'''
 After the execution of above command , all inputs are being read as show in below image :-
 
 
@@ -86,6 +86,7 @@ read_liberty
 "Find all cells in simple_max.lib" Total 211 cells are present 
 
 'simple_max.lib'
+
 ![day2](./images/day2_1.png)
 
 
@@ -125,6 +126,7 @@ Following the circuit provided to perform the slack compulation calculation
 Following snap shows the command & inputs used for slack computation :- 'report_checks -from F1/CK'
 
 Run 'run.tcl'
+
 ![day3](./images/day3_2.png)
 
 
@@ -176,6 +178,7 @@ Open 's27.v'
 from the above figure we have to analyze the path in the report of the slack
 
 Type 'cd lab3'
+
 • Run ‘sta run.tcl -noexit | tee out.txt’
 
 ![day5](./images/day5_2.png)
@@ -183,15 +186,20 @@ Type 'cd lab3'
 
 
 # exercise 
+
 'report_checks –from F1/CK -endpoint_count 100'
+
 
 ![exe](./images/exe1.png)
 
 
 
 commom path pesimism removal('CRPR')
+
 Type 'cd lab4'
-• Run 'sta run.tcl –exit | out.txt’'
+
+• Run ```sta run.tcl –exit | out.txt'```
+
 ' report_checks –to F2/D'
 
 ![exe](./images/exe2.png)
@@ -199,10 +207,11 @@ Type 'cd lab4'
 
 
 with set sta_crpr_enabled 1 : 
-'''
+```
 • set sta_crpr_enabled 1
+
 % report_checks -to F2/D
-'''
+```
 ![exe](./images/exe3.png)
 
 
@@ -211,7 +220,7 @@ with set sta_crpr_enabled 1 :
 
 cd lab5 and run.tcl
 
-Run 'sta run.tcl –exit | tee run.log'
+Run ```sta run.tcl –exit | tee run.log```
 
 ![eco](./images/eco_insert.png)
 
