@@ -200,7 +200,7 @@ Open `s27.v`
 ![day5](./images/day5_1.png)
 
 
-from the above figure we have to analyze the path in the report of the slack
+From the above figure we have to analyze the path in the report of the slack
 
 Type `cd lab3`
 
@@ -221,7 +221,7 @@ report_checks –from F1/CK -endpoint_count 100
 
 
 
-commom path pesimism removal('CRPR')
+Commom path pesimism removal('CRPR')
 
 Type `cd lab4`
 
@@ -235,7 +235,7 @@ report_checks –to F2/D
 
 
 
-with set sta_crpr_enabled 1 : 
+With set sta_crpr_enabled 1 : 
 ```
 set sta_crpr_enabled 1
 report_checks -to F2/D
@@ -257,7 +257,7 @@ sta run.tcl –exit | tee run.log
 
 
 
-diff between s27.v and s27_eco.v
+Difference between s27.v and s27_eco.v
 
 ![diff](./images/gvimdiff.png)
 
